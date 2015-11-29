@@ -21,11 +21,11 @@ public class Main extends Application{
 	@Override
 	public void start(Stage primaryStage) throws Exception {
 		GridPane root = (GridPane)FXMLLoader.load(getClass().getResource("/View.fxml"));
-		Scene scene = new Scene(root,200,95);
+		Scene scene = new Scene(root,300,95);
 		scene.getStylesheets().add(getClass().getResource("/application.css").toExternalForm());
 		primaryStage.setMaxHeight(130);
-		primaryStage.setMaxWidth(200);
-		primaryStage.setTitle("Checker");
+		primaryStage.setMaxWidth(300);
+		primaryStage.setTitle("ConnectionChecker");
 		primaryStage.getIcons().add(new Image(getClass().getResourceAsStream("/icon.png")));
 		primaryStage.setScene(scene);	
 		primaryStage.show();
