@@ -163,11 +163,9 @@ public class ViewController implements Initializable{
 		//set action listers for popup menue
 		ActionListener listenerShow = new ActionListener() {
 
-			@Override
 			public void actionPerformed(ActionEvent e) {
 				Platform.runLater(new Runnable() {
 
-					@Override
 					public void run() {
 						primaryStage.show();
 					}
@@ -177,7 +175,6 @@ public class ViewController implements Initializable{
 
 		ActionListener listenerClose = new ActionListener() {
 
-			@Override
 			public void actionPerformed(ActionEvent e) {
 				System.exit(0);
 			}
@@ -185,7 +182,6 @@ public class ViewController implements Initializable{
 
 		primaryStage.setOnCloseRequest(new EventHandler<WindowEvent>() {
 
-			@Override
 			public void handle(WindowEvent arg0) {
 				primaryStage.hide();
 			}
