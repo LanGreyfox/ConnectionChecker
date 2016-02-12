@@ -1,8 +1,8 @@
-# ConnectionChecker v.0.0.1
+# ConnectionChecker v0.0.1
 
 Simple JavaFX Application which tests your internet connectivity. JDK 8 is required.
 
-What doas it do?
+What does it do?
 
 1. Ping http://www.google.at each second.
 2. Create a dayli protocoll of ping results. (app.txt, app_date.txt, ...)
