@@ -4,9 +4,10 @@ Simple JavaFX Application which tests your internet connectivity. JDK 8 is requi
 
 What does it do?
 
-1. Ping http://www.google.at each second.
+1. Pings http://www.google.com each second.
 2. Create a dayli protocoll of ping results. (app.txt, app_date.txt, ...)
 3. A Notification is sent to user, when the computer is online or offline.
+4. Visualizes errors per hour in an area chart.
 
 What to execute?
 
