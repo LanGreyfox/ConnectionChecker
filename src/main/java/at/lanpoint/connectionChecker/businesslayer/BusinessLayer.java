@@ -25,7 +25,7 @@ public class BusinessLayer implements Runnable {
 	 * initializes errors of Day
 	 */
 	private void initialize(){
-		for(int i = 1; i < 25; i++){
+		for(int i = 0; i < 24; i++){
 			errorsDuringDay.put(i, 0);
 		}
 	}

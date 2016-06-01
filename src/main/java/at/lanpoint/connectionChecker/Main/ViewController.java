@@ -107,7 +107,7 @@ public class ViewController implements Initializable {
 		stage.setTitle("Anzahl der Fehler pro Stunde");
 		stage.getIcons().add(new Image(getClass().getResourceAsStream("/icon.png")));
 
-		final NumberAxis xAxis = new NumberAxis(1, 24, 1);
+		final NumberAxis xAxis = new NumberAxis(0, 23, 1);
 		final NumberAxis yAxis = new NumberAxis();
 		
 		yAxis.setTickLabelFormatter(new IntegerStringConverter());
@@ -118,8 +118,8 @@ public class ViewController implements Initializable {
 		XYChart.Series seriesErrors = new XYChart.Series();
 		seriesErrors.setName("Anzahl der Fehler");
 
-		for (int i = 1; i <= 24; i++) {
-			if (errorsDuringDay.size() >= 24) {
+		for (int i = 0; i <= 23; i++) {
+			if (errorsDuringDay.size() >= 23) {
 				seriesErrors.getData().add(new XYChart.Data(i, errorsDuringDay.get(i)));
 			} else {
 				seriesErrors.getData().add(new XYChart.Data(i, 0));
