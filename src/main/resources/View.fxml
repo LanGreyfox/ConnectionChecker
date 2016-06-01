@@ -18,7 +18,8 @@
 		<GridPane maxHeight="90.0" maxWidth="300.0">
 			<columnConstraints>
 				<ColumnConstraints hgrow="SOMETIMES" maxWidth="149.0" minWidth="10.0" prefWidth="139.0" />
-				<ColumnConstraints hgrow="SOMETIMES" maxWidth="150.0" minWidth="10.0" prefWidth="150.0" />
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="100.0" minWidth="10.0" prefWidth="100.0" />
+				<ColumnConstraints hgrow="SOMETIMES" maxWidth="60.0" minWidth="10.0" prefWidth="60.0" />
 			</columnConstraints>
 			<rowConstraints>
 				<RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
@@ -41,17 +42,22 @@
 						<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
 					</GridPane.margin>
 				</Button>
-				<Button fx:id="stopButton" mnemonicParsing="false" onAction="#stopChecker" text="Stop" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+				<Button fx:id="graphButton" mnemonicParsing="false" onAction="#showChart" text="Graph" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
 					<GridPane.margin>
 						<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
 					</GridPane.margin>
 				</Button>
-				<ImageView fx:id="statusImage" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
+				<Button fx:id="stopButton" mnemonicParsing="false" onAction="#stopChecker" text="Stop" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="2">
+					<GridPane.margin>
+						<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+					</GridPane.margin>
+				</Button>
+				<ImageView fx:id="statusImage" fitHeight="16.0" fitWidth="16.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.valignment="CENTER">
 					<GridPane.margin>
 						<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
 					</GridPane.margin>
 				</ImageView>
-				<Label fx:id="count" text="0" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
+				<Label fx:id="count" text="0" GridPane.columnIndex="2" GridPane.halignment="RIGHT" GridPane.rowIndex="1">
 					<GridPane.margin>
 						<Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
 					</GridPane.margin>
